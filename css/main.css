@@ -1085,7 +1085,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #333333;
+  color: #fff;
   background-color: #fff;
 }
 input,
@@ -1337,39 +1337,39 @@ mark,
   color: #777777;
 }
 .text-primary {
-  color: #337ab7;
+  color: #0081dc;
 }
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #286090;
+  color: #005c9d;
 }
 .text-success {
-  color: #3c763d;
+  color: #07a8a6;
 }
 a.text-success:hover,
 a.text-success:focus {
-  color: #2b542c;
+  color: #057876;
 }
 .text-info {
-  color: #31708f;
+  color: #969dba;
 }
 a.text-info:hover,
 a.text-info:focus {
-  color: #245269;
+  color: #5f6991;
 }
 .text-warning {
-  color: #8a6d3b;
+  color: #e64b12;
 }
 a.text-warning:hover,
 a.text-warning:focus {
-  color: #66512c;
+  color: #a4350c;
 }
 .text-danger {
-  color: #a94442;
+  color: #dc3545;
 }
 a.text-danger:hover,
 a.text-danger:focus {
-  color: #843534;
+  color: #a61c2a;
 }
 .bg-primary {
   color: #fff;
