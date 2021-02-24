@@ -1354,11 +1354,11 @@ a.text-primary:focus {
   color: #00429d;
 }
 .text-success {
-  color: #07a8a6;
+  color: #00b3b5;
 }
 a.text-success:hover,
 a.text-success:focus {
-  color: #057876;
+  color: #007f81;
 }
 .text-info {
   color: #767c97;
@@ -3276,25 +3276,25 @@ fieldset[disabled] .btn-primary.focus {
 }
 .btn-success {
   color: #fff;
-  background-color: #07a8a6;
+  background-color: #00b3b5;
   border-color: transparent;
 }
 .btn-success:focus,
 .btn-success.focus {
   color: #fff;
-  background-color: #057876;
+  background-color: #007f81;
   border-color: transparent;
 }
 .btn-success:hover {
   color: #fff;
-  background-color: #057876;
+  background-color: #007f81;
   border-color: transparent;
 }
 .btn-success:active,
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
   color: #fff;
-  background-color: #057876;
+  background-color: #007f81;
   background-image: none;
   border-color: transparent;
 }
@@ -3308,7 +3308,7 @@ fieldset[disabled] .btn-primary.focus {
 .btn-success.active.focus,
 .open > .dropdown-toggle.btn-success.focus {
   color: #fff;
-  background-color: #057876;
+  background-color: #007f81;
   border-color: transparent;
 }
 .btn-success.disabled:hover,
@@ -3320,11 +3320,11 @@ fieldset[disabled] .btn-success:focus,
 .btn-success.disabled.focus,
 .btn-success[disabled].focus,
 fieldset[disabled] .btn-success.focus {
-  background-color: #07a8a6;
+  background-color: #00b3b5;
   border-color: transparent;
 }
 .btn-success .badge {
-  color: #07a8a6;
+  color: #00b3b5;
   background-color: #fff;
 }
 .btn-info {
@@ -4928,15 +4928,15 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .label {
   display: inline;
-  padding: 0.2em 0.6em 0.3em;
-  font-size: 75%;
-  font-weight: 700;
+  padding: 2px 24px;
+  font-size: 80%;
+  font-weight: 400;
   line-height: 1;
   color: #fff;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 0.25em;
+  border-radius: 1em;
 }
 a.label:hover,
 a.label:focus {
@@ -4966,7 +4966,9 @@ a.label:focus {
   background-color: #286090;
 }
 .label-success {
-  background-color: #5cb85c;
+  color: #00b3b5;
+  background-color: transparent;
+  border: 1px solid #00b3b5;
 }
 .label-success[href]:hover,
 .label-success[href]:focus {
