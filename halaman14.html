@@ -19,7 +19,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body style="z-index: 1; background: #080f28e1;">
+  <body style="z-index: 1; background: url(img/bg.jpg) 50% 0% / cover no-repeat scroll padding-box border-box rgb(255, 255, 255);">
 
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -64,20 +64,71 @@
     <div class="container-fluid">
       <div class="row" style="margin-top: -20px; margin-bottom: 16px;">
         <div class="col-md-12" style="display: flex; align-items: center;">
-          <h4 style="margin: 0;">Overview</h4>
+          <h4 style="margin: 0;">Profil & Setting</h4>
           <small class="text-primary" style="margin-left: auto; margin-right: 20px;">Total Nilai Aset</small>
           <small>Rp. 895.265.678</small>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4" style="padding: 0 7px 0 14px;">
-          <div class="bg-primary" style="display: flex; flex-direction: column; align-items: center; min-height: 50vh;">
-            <h5 class="text-info" style="align-self: flex-start; margin-left: 10px; margin-bottom: 32px;  font-weight: bold;">FOTO PROFIL</h5>
+          <div class="bg-primary small text-info" style="display: flex; flex-direction: column; align-items: center; min-height: 50vh; padding: 10px;">
+            <h5 style="align-self: flex-start; margin-top: 0; margin-bottom: 32px;  font-weight: bold;">FOTO PROFIL</h5>
+            <div>
+              <p style="margin-bottom: 32px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, possimus, sit dicta ipsam saepe omnis sint ex impedit, ratione nemo reprehenderit, harum illum eveniet distinctio qui facere repellat debitis? Quis.</p>
+              <div style="display: flex; margin-bottom: 32px;">
+                <div style="display: flex; flex-direction: column; align-items:center;">
+                  <p style="margin-bottom: 8px;">Foto profil saat ini</p>
+                  <img src="img/dummy.jpg" alt="dummy.jpg" class="img-circle" style="width: 80px;">
+                </div>
+                <div style="display: flex; flex-direction: column; align-items:flex-start; margin-left: auto;">
+                  <p style="margin-bottom: 8px;">Ganti foto baru</p>
+                  <div class="form-group" style="width: 240px;">                      
+                    <input type="file" class="form-control" id="file">
+                    <small>Ukuran file maksimal 500kb</small>
+                  </div>
+                </div>
+              </div>
+              <div style="display: flex; justify-content: flex-end;">
+                <button class="btn btn-primary text-right">Perbarui Foto</button>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-md-4" style="padding: 0 7px;">
-          <div class="bg-primary" style="display: flex; flex-direction: column; min-height: 50vh;">
-            <h5 class="text-info" style="margin-left: 10px; margin-bottom: 32px; font-weight: bold;">PROFIL</h5>
+          <div class="bg-primary text-info" style="display: flex; flex-direction: column; min-height: 50vh; padding: 10px;">
+            <h5 style="margin-top: 0; margin-bottom: 32px; font-weight: bold;">PROFIL</h5>
+            <table>
+              <tr>
+                <td>Verifikasi</td>
+                <td>:</td>
+                <td>Belum Verifikasi <span class="label label-success">Ajukan Verifikasi</span></td>
+              </tr>
+              <tr>
+                <td>Nama Lengkap</td>
+                <td>:</td>
+                <td><i class="text-warning small">Belum diset</i></td>
+              </tr>
+              <tr>
+                <td>Username</td>
+                <td>:</td>
+                <td>aghisna</td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td>aghisna@gmail.com</td>
+              </tr>
+              <tr>
+                <td>Nomor HP</td>
+                <td>:</td>
+                <td><i class="text-warning small">Belum diset</i></td>
+              </tr>
+              <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td><i class="text-warning small">Belum diset</i></td>
+              </tr>
+            </table>
           </div>
         </div>
         <div class="col-md-4" style="padding: 0 14px 0 7px;">
@@ -88,8 +139,26 @@
       </div>
       <div class="row" style="margin-top: 14px;">
         <div class="col-md-4" style="padding: 0 7px 0 14px;">
-          <div class="bg-primary" style="display: flex; flex-direction: column; min-height: 50vh;">
-            <h5 class="text-info" style="margin-left: 10px; margin-bottom: 32px; font-weight: bold;">SETTING AKUN</h5>
+          <div class="bg-primary text-info" style="display: flex; flex-direction: column; min-height: 50vh; padding: 10px;">
+            <h5 style="margin-top: 0; margin-bottom: 32px; font-weight: bold;">SETTING AKUN</h5>
+            <div class="form-group">                      
+              <label>Bahasa</label>
+              <select class="form-control" id="bahasa">
+                <option>Berhasil</option>
+                <option>Dibatalkan</option>
+                <option>Dipakai</option>
+                <option>Belum dipakai</option>
+              </select>
+            </div>
+            <div class="form-group">                      
+              <label>Zona/Waktu</label>
+              <select class="form-control" id="bahasa">
+                <option>Berhasil</option>
+                <option>Dibatalkan</option>
+                <option>Dipakai</option>
+                <option>Belum dipakai</option>
+              </select>
+            </div>
           </div>
         </div>
         <div class="col-md-4" style="padding: 0 7px 0 7px;">
