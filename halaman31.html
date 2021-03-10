@@ -78,32 +78,46 @@
     </nav>
 
     <div class="container-fluid">
-      <div class="row">
+      <div class="row" style="margin-bottom: margin-top: -20px; margin-bottom: 16px;">
         <div class="col-md-6">
-          <strong>Voucher</strong>
+          <h4 style="margin: 0;"><strong>Voucher</strong></h4>
         </div>
-        <div class="col-md-6 text-right">
-          <span class="text-primary">Total Nilai Aset</span> Rp.898.398.000
+        <div class="col-md-6 text-right small">
+          <span class="text-primary" style="padding-right: 10px;">Total Nilai Aset</span> Rp.898.398.000
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-12 text-center">
-          <div class="bg-primary container-fluid text-left">    
-            <a href=".1" class="btn btn-link" data-toggle="collapse">Pencarian Voucher</a>
-            <a href=".2" class="btn btn-link" data-toggle="collapse">Buat Voucher Baru</a>
-            <a href=".3" class="btn btn-link" data-toggle="collapse">Riwayat</a>
+          <div class="bg-primary container-fluid text-left text-info">    
+            <a href=".1" class="text-info" data-toggle="collapse">Pencarian Voucher</a>
+            <a href=".2" class="text-info" data-toggle="collapse" style="padding: 12px 25px 0 25px; display: inline-flex;">Buat Voucher Baru</a>
+            <a href=".3" class="" data-toggle="collapse">Riwayat</a>
             <hr>
             <div id="" class="3 collapse in">
               <h5><strong>Riwayat Voucher</strong></h5>
               <br>
               <p>Pilih riwayat yang ingin dilihat</p>
+              <br>
               <form class="form-inline">                  
                 <div class="form-group">                      
-                  <label><strong>Bulan dan Tahun : </strong></label>
-                  <input type="month" class="form-control" id="month" placeholder="">
+                  <label><strong>Bulan : </strong></label>
+                  <select class="form-control" id="status">
+                    <option>Januari</option>
+                    <option>Februari</option>
+                    <option>April</option>
+                    <option>Maret</option>
+                  </select>
                 </div>
-                <div class="form-group">                      
+                <div class="form-group" style="padding: 0 50px">                      
+                  <label><strong>Tahun : </strong></label>
+                  <select class="form-control" id="status">
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>                    
+                  </select>
+                </div>
+                <div class="form-group" style="padding-right: 50px">                      
                   <label><strong>Status : </strong></label>
                   <select class="form-control" id="status">
                     <option>Berhasil</option>
@@ -118,8 +132,8 @@
               </form>
               <br><br>
               <div class="table-responsive">
-                <table class="table table-hover">
-                  <thead>
+                <table class="table">
+                  <tbody>
                     <tr>
                       <th>WAKTU</th>
                       <th>JENIS</th>
@@ -128,8 +142,6 @@
                       <th>STATUS</th>
                       <th>EMAIL PENERIMA</th>
                     </tr>
-                  </thead>
-                  <tbody>
                     <tr>
                       <td>22-2-2222</td>
                       <td>pembuatan</td>

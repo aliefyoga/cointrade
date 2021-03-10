@@ -78,32 +78,80 @@
     </nav>
 
     <div class="container-fluid">
-      <div class="row">
+      <div class="row" style="margin-bottom: margin-top: -20px; margin-bottom: 16px;">
         <div class="col-md-6">
-          <strong>Voucher</strong>
+          <h4 style="margin: 0;"><strong>Deposit/Withsraw</strong></h4>
         </div>
-        <div class="col-md-6 text-right">
-          <span class="text-primary">Total Nilai Aset</span> Rp.898.398.000
+        <div class="col-md-6 text-right small">
+          <span class="text-primary" style="padding-right: 10px;">Total Nilai Aset</span> Rp.898.398.000
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-12 text-center">
-          <div class="bg-primary container-fluid text-left">    
-            <a href=".1" class="btn btn-link" data-toggle="collapse">Deposit</a>
-            <a href=".2" class="btn btn-link" data-toggle="collapse">Withdraw</a>
+          <div class="bg-primary container-fluid text-left text-info">    
+            <a href=".1" class="" data-toggle="collapse">Deposit</a>
+            <a href=".2" class="text-info" data-toggle="collapse" style="margin: 12px 0 0 25px; display: inline-flex;">Withdraw</a>
             <hr>
-            <div id="" class="1 collapse in">
-              <h5><strong>Deposit Histori</strong></h5>
+            <div id="" class="1 collapse in">              
+              <strong class="text-success">2.563453654 BTC</strong>
+              <br><br>
+              <form class="row">                                 
+                <div class="form-group col-md-2">                      
+                  <label><strong>Nama Aset : </strong></label>
+                  <select class="form-control col-md-3" id="status">
+                    <option>Bitcoin</option>
+                    <option>Bitalgo</option>
+                    <option>Avccoin</option>
+                    <option>Rupiah</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-5">
+                  <label><strong>Silahkan kirim ke alamat berikut :</strong></label>
+                  <div class="input-group">
+                    <input type="text" name="" class="form-control col-md-3" disabled="" value="197466RgsadhRJn12Bvy4">
+                    <div class="input-group-addon">
+                      <span>Copy</span>
+                    </div>                    
+                  </div>  
+                  <span class="small">*Deposit akan masuk setelah 1 konfirmasi</span>                
+                </div>
+                <div class="form-group col-md-2">                      
+                  <label><strong>QR Code : </strong></label>
+                  <select class="form-control" id="status">
+                    <option>Tampilkan QR Code</option>
+                    <option>Haha</option>
+                  </select>
+                </div>       
+              </form>              
+
+            </div>
+          </div>  
+
+            <div id="" class="1 bg-primary collapse in text-left text-info" style="margin-top: 10px; padding: 10px;">
+              <h5><strong>Deposit History</strong></h5>
               <hr>
-              <br>
               <p>Pilih riwayat yang ingin dilihat</p>
+              <br>
               <form class="form-inline">                  
                 <div class="form-group">                      
-                  <label><strong>Bulan dan Tahun : </strong></label>
-                  <input type="month" class="form-control" id="month" placeholder="">
+                  <label><strong>Bulan : </strong></label>
+                  <select class="form-control" id="status">
+                    <option>Januari</option>
+                    <option>Februari</option>
+                    <option>April</option>
+                    <option>Maret</option>
+                  </select>
                 </div>
-                <div class="form-group">                      
+                <div class="form-group" style="padding: 0 50px">                      
+                  <label><strong>Tahun : </strong></label>
+                  <select class="form-control" id="status">
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>                    
+                  </select>
+                </div>
+                <div class="form-group" style="padding-right: 50px">                      
                   <label><strong>Status : </strong></label>
                   <select class="form-control" id="status">
                     <option>Berhasil</option>
@@ -118,27 +166,24 @@
               </form>
               <br><br>
               <div class="table-responsive">
-                <table class="table table-hover">
-                  <thead>
-                    <tr>
-                      <th>WAKTU</th>
-                      <th>JUMLAH</th>
-                      <th>HASH TRANSAKSI</th>
-                      <th>STATUS</th>
-                    </tr>
-                  </thead>
+                <table class="table">
                   <tbody>
                     <tr>
-                      <td>22-2-2222</td>
-                      <td>0.9872763812</td>
-                      <td>k3n24jn6kjnn1j299085jnnfnjnsjdknf</td>
-                      <td>Berhasil</td>
+                      <th>WAKTU</th>                      
+                      <th>JUMLAH</th>
+                      <th>KODE VOUCHER</th>
+                      <th>STATUS</th>                      
+                    </tr>
+                    <tr>
+                      <td>22-2-2222</td>                      
+                      <td>100.000.000</td>
+                      <td>FASDQE-ASFGQWE-ASFGWEREWR-GDSFQWE-WEFDSF</td>
+                      <td class="text-success">Berhasil</td>                      
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
-          </div>          
         </div>        
       </div>
     </div><!-- /.container-fluid -->
