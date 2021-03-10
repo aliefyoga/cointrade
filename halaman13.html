@@ -19,7 +19,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body style="z-index: 1; background: url(img/bg.jpg) 50% 0% / cover no-repeat scroll padding-box border-box rgb(255, 255, 255);">
+  <body style="z-index: 1; background: url('img/bg-overlay.png') 50% 0% / cover no-repeat scroll padding-box border-box">
 
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -31,7 +31,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
+          <a class="navbar-brand" href="#">
+            <div>
+              <img src="img/logo.png" alt="logo">
+            </div>
+          </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -53,9 +57,28 @@
             <li><a href="#">Forum</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Register</a></li>
+            <li><a href="#">Saldo</a></li>
             <li><a href="#">Bahasa</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="padding: 5px;"><img src="img/dummy.jpg" alt="dummy" class="img-circle" style="width: 40px;"></a>
+              <ul class="dropdown-menu" style="min-width: 200px;">
+                <li>
+                  <a href="#" class="small">
+                    <span class="text-primary">aghisna</span><br>
+                    <span class="text-info">Aghisna Ilma</span>
+                  </a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true" style="margin-right: 8px;"></span>Profil & Setting</a></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-lock" aria-hidden="true" style="margin-right: 8px;"></span>Keamanan</a></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-tags" aria-hidden="true" style="margin-right: 8px;"></span>Voucher</a></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-tower" aria-hidden="true" style="margin-right: 8px;"></span>Program Afiliasi</a></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-apple" aria-hidden="true" style="margin-right: 8px;"></span>Dukungan</a></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true" style="margin-right: 8px;"></span>Informasi</a></li>
+                <li role="separator" class="divider"></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-log-out" aria-hidden="true" style="margin-right: 8px;"></span>Logout</a></li>
+              </ul>
+            </li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -83,12 +106,17 @@
                 <div style="display: flex; flex-direction: column; align-items:flex-start; margin-left: auto;">
                   <p style="margin-bottom: 8px;">Ganti foto baru</p>
                   <div class="form-group" style="width: 240px;">                      
-                    <input type="file" class="form-control" id="file">
+                    <div class="input-group">
+                    <div class="input-group-addon">
+                      <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="label label-success">Pilih Berkas</span></a>
+                    </div>
+                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Tidak ada berkas">
+                  </div>
                     <small>Ukuran file maksimal 500kb</small>
                   </div>
                 </div>
               </div>
-              <div style="display: flex; justify-content: flex-end;">
+              <div style="float: right;">
                 <button class="btn btn-primary text-right">Perbarui Foto</button>
               </div>
             </div>
@@ -170,7 +198,7 @@
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js" crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
   </body>
