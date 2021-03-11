@@ -19,7 +19,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body style="z-index: 1; background: url('http://next.cointrade.id/gallery_gen/ec7ccfe8da707ddbf21962addb76a4f1.jpg') 50% 0% / cover no-repeat scroll padding-box border-box rgb(255, 255, 255);">
+  <body style="z-index: 1; background: url('img/bg-overlay.png') 50% 0% / cover no-repeat scroll padding-box border-box">
 
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -31,7 +31,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
+          <a class="navbar-brand" href="#">
+            <div>
+              <img src="img/logo.png" alt="logo">
+            </div>
+          </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -87,10 +91,10 @@
                 </div>
                 <div class="form-group" style="margin-bottom: 52px;">
                   <div class="input-group">
-                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Code">
-                    <div class="input-group-addon" style="min-width: 100px;">
-                      <a href="#">Kirim Email</a>
+                    <div class="input-group-addon" style="background-color: #767c9720;">
+                      <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">⬤</a>
                     </div>
+                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Klik untuk verifikasi" style="border-left: 0;">
                   </div>
                 </div>
                 <div style="display: flex; justify-content: center; margin-bottom: 40px;">
@@ -99,14 +103,22 @@
               </form>
               <p class="text-center" style="margin-bottom: 76px;"><a href="#">Lupa password?</a></p>
               <div style="display: flex; margin-bottom: 12px;">
-                <small class="text-left text-info" style="display: inline-block;">Kirim ulang email verifikasi? <a href="#">Kirim</a></small>
-                <small class="text-right text-info" style="display: inline-block; margin-left: auto;">Belum memiliki akun? <a href="#">Register</a></small>  
+                <p class="text-left text-info" style="display: inline-block;">Kirim ulang email verifikasi? <a href="#">Kirim</a></p>
+                <p class="text-right text-info" style="display: inline-block; margin-left: auto;">Belum memiliki akun? <a href="#">Register</a></p>  
               </div>
             </div>
           </div>
         </div>
       <!-- </div> -->
     </div><!-- /.container -->
+
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="modal-dialog modal-sm" style="width: 200px; transform: translate(153px, 220px);" role="document">
+        <div class="modal-content bg-primary" style="min-height: 200px;">
+          ...
+        </div>
+      </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>

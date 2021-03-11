@@ -19,7 +19,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body style="z-index: 1; background: url('http://next.cointrade.id/gallery_gen/ec7ccfe8da707ddbf21962addb76a4f1.jpg') 50% 0% / cover no-repeat scroll padding-box border-box rgb(255, 255, 255);">
+  <body style="z-index: 1; background: url('img/bg-overlay.png') 50% 0% / cover no-repeat scroll padding-box border-box">
 
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -31,7 +31,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
+          <a class="navbar-brand" href="#">
+            <div>
+              <img src="img/logo.png" alt="logo">
+            </div>
+          </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -87,10 +91,10 @@
                 </div>
                 <div class="form-group" style="margin-bottom: 52px;">
                   <div class="input-group">
-                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Code">
-                    <div class="input-group-addon" style="min-width: 100px;">
-                      <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">Kirim Email</a>
+                    <div class="input-group-addon" style="background-color: #767c9720;">
+                      <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">⬤</a>
                     </div>
+                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Klik untuk verifikasi" style="border-left: 0;">
                   </div>
                 </div>
                 <div style="display: flex; justify-content: center; margin-bottom: 40px;">
@@ -99,8 +103,8 @@
               </form>
               <p class="text-center" style="margin-bottom: 76px;"><a href="#">Lupa password?</a></p>
               <div style="display: flex; margin-bottom: 12px;">
-                <small class="text-left text-info" style="display: inline-block;">Kirim ulang email verifikasi? <a href="#">Kirim</a></small>
-                <small class="text-right text-info" style="display: inline-block; margin-left: auto;">Belum memiliki akun? <a href="#">Register</a></small>  
+                <p class="text-left text-info" style="display: inline-block;">Kirim ulang email verifikasi? <a href="#">Kirim</a></p>
+                <p class="text-right text-info" style="display: inline-block; margin-left: auto;">Belum memiliki akun? <a href="#">Register</a></p>  
               </div>
             </div>
           </div>
@@ -111,7 +115,14 @@
     <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
       <div class="modal-dialog modal-sm" style="width: 480px; transform: translate(0, 180px);" role="document">
         <div class="modal-content bg-primary text-center" style="min-height: 320px; padding: 16px 32px;">
-          <h2 style="margin-bottom: 32px;">COINTRADE</h2>
+          <img src="img/logo.png" alt="logo" style="margin-top: 32px; margin-bottom: 32px;">
+          <p class="text-info" style="margin-bottom: 32px;">Google Authenticator</p>
+          <div style="display: flex; justify-content: center;">
+            <input type="email" class="form-control text-center" id="exampleInputEmail1" placeholder="PIN Google Authenticator" style="width: 50%;">
+          </div>
+          <div style="margin-top: 24px;">
+            <button class="btn btn-primary" style="border-radius: 0; padding-left: 64px; padding-right: 64px;">LOGIN</button>
+          </div>
         </div>
       </div>
     </div>
