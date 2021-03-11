@@ -19,7 +19,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body style="z-index: 1; background: #080f28e1;">
+  <body style="z-index: 1; background: url('img/bg-overlay.png') 50% 0% / cover no-repeat scroll padding-box border-box">
 
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -31,7 +31,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
+          <a class="navbar-brand" href="#">
+            <div>
+              <img src="img/logo.png" alt="logo">
+            </div>
+          </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -53,9 +57,33 @@
             <li><a href="#">Forum</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Register</a></li>
-            <li><a href="#">Bahasa</a></li>
+            <li><a href="#">Saldo<span class="glyphicon glyphicon-bell" aria-hidden="true" style="margin-left: 8px; vertical-align: middle;"></span></a></li>
+            <li><a href="#">Bahasa<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true" style="margin-left: 8px; vertical-align: middle;"></span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="padding: 14px;"><img src="img/dummy.jpg" alt="dummy" class="img-circle" style="width: 40px;"></a>
+              <ul class="dropdown-menu" style="min-width: 200px;">
+                <li>
+                  <a href="#">
+                    <div style="display: flex; align-items: center;">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="margin-right: 8px;"></span>
+                      <div>
+                        <p class="text-primary">aghisna</p>
+                        <p class="text-info">Aghisna Ilma</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true" style="margin-right: 8px;"></span>Profil & Setting</a></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-lock" aria-hidden="true" style="margin-right: 8px;"></span>Keamanan</a></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-tags" aria-hidden="true" style="margin-right: 8px;"></span>Voucher</a></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-tower" aria-hidden="true" style="margin-right: 8px;"></span>Program Afiliasi</a></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-apple" aria-hidden="true" style="margin-right: 8px;"></span>Dukungan</a></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true" style="margin-right: 8px;"></span>Informasi</a></li>
+                <li role="separator" class="divider"></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-log-out" aria-hidden="true" style="margin-right: 8px;"></span>Logout</a></li>
+              </ul>
+            </li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -64,50 +92,236 @@
     <div class="container-fluid">
       <div class="row" style="margin-top: -20px; margin-bottom: 16px;">
         <div class="col-md-12" style="display: flex; align-items: center;">
-          <h4 style="margin: 0;">Overview</h4>
-          <small class="text-primary" style="margin-left: auto; margin-right: 20px;">Total Nilai Aset</small>
-          <small>Rp. 895.265.678</small>
+          <h4 style="margin: 0;">Profil & Setting</h4>
+          <p class="text-primary" style="margin-left: auto; margin-right: 20px;">Total Nilai Aset</p>
+          <p>Rp. 895.265.678</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-2" style="padding: 0 7px 0 14px;">
-          <div class="bg-primary" style="display: flex; flex-direction: column; align-items: center; min-height: 50vh;">
-            <h5 class="text-info" style="align-self: flex-start; margin-left: 10px; margin-bottom: 32px;  font-weight: bold;">PROFIL</h5>
-            <img src="img/dummy.jpg" alt="dummy" class="img-circle" style="width: 80px; margin-bottom: 16px;">
-            <small>Aghisna Ilma</small>
-            <small class="text-info" style="margin-bottom: 16px;">aghisna</small>
-            <span class="label label-success" style="margin-bottom: 48px;">Terverifikasi</span>
-            <small class="text-info">Total Nilai Aset</small>
-            <small class="text-primary">Rp. 895.265.678</small>
+        <div class="col-md-4" style="padding: 0 7px 0 14px;">
+          <div class="bg-primary text-info" style="height: 320px; padding: 10px;">
+            <h5 style="margin-top: 0; margin-bottom: 32px;"><strong>FOTO PROFIL</strong></h5>
+            <div>
+              <p style="margin-bottom: 32px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, possimus, sit dicta ipsam saepe omnis sint ex impedit, ratione nemo reprehenderit, harum illum eveniet distinctio qui facere repellat debitis? Quis.</p>
+              <div class="row" style="margin-bottom: 16px;">
+                <div class="col-md-5">
+                  <p>Foto profil saat ini</p>
+                </div>
+                <div class="col-md-7">
+                  <p>Ganti foto baru</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5">
+                  <img src="img/dummy.jpg" alt="dummy.jpg" class="img-circle" style="width: 80px;">
+                </div>
+                <div class="col-md-7">
+                  <div class="form-group">                      
+                    <div class="input-group col-md-7">
+                      <div class="input-group-addon" style="background-color: #767c9720;">
+                        <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm" class="label label-success" style="font-size: 8px; padding: 2px 12px; color: white;">Pilih Berkas</a>
+                      </div>
+                      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Tidak ada berkas" style="border-left: 0px; font-size: 10px; width: 120px;">
+                    </div>
+                    <small>Ukuran file maksimal 500kb</small>
+                  </div>
+                </div>
+              </div>
+              <div style="float: right;">
+                <button class="btn btn-primary text-right">Perbarui Foto</button>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-5" style="padding: 0 7px;">
-          <div class="bg-primary" style="display: flex; flex-direction: column; min-height: 50vh;">
-            <h5 class="text-info" style="margin-left: 10px; margin-bottom: 32px; font-weight: bold;">RIWAYAT LOGIN</h5>
+        <div class="col-md-4" style="padding: 0 7px;">
+          <div class="bg-primary text-info" style="height: 320px; padding: 10px;">
+            <h5 style="margin-top: 0; margin-bottom: 17px;"><strong>PROFIL</strong></h5>
+            <table style="width: 100%; border-collapse: separate; border-spacing: 0 15px;">
+              <tr>
+                <td style="width: 35%;">Verifikasi</td>
+                <td style="width: 3%;">:</td>
+                <td style="width: 62%;"><strong class="text-success">Terverifikasi</strong></td>
+              </tr>
+              <tr>
+                <td>Nama Lengkap</td>
+                <td>:</td>
+                <td><strong>Aghisna Ilma</strong></td>
+              </tr>
+              <tr>
+                <td>Username</td>
+                <td>:</td>
+                <td><strong>aghisna</strong></td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td><strong>aghisna@gmail.com</strong><span class="label label-success" style="font-size: 8px; padding: 2px 12px; color: white; margin-left: 16px;">Ajukan Perubahan</span></td>
+              </tr>
+              <tr>
+                <td>Nomor HP</td>
+                <td>:</td>
+                <td><strong>089890988009</strong><span class="label label-success" style="font-size: 8px; padding: 2px 12px; color: white; margin-left: 16px;">Ajukan Perubahan</span></td>
+              </tr>
+              <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td><strong>Jl. Bersama dia yang cuma menganggap teman, No.001</strong><span class="label label-success" style="font-size: 8px; padding: 2px 12px; color: white; margin-left: 16px;">Ajukan Perubahan</span></td>
+              </tr>
+            </table>
           </div>
         </div>
-        <div class="col-md-5" style="padding: 0 14px 0 7px;">
-          <div class="bg-primary" style="display: flex; flex-direction: column; min-height: 50vh;">
-            <h5 class="text-info" style="margin-left: 10px; margin-bottom: 32px; font-weight: bold;">RIWAYAT TRANSAKSI</h5>
+        <div class="col-md-4" style="padding: 0 14px 0 7px;">
+          <div class="bg-primary text-info" style="height: 320px; padding: 10px;">
+            <h5 style="margin-top: 0; margin-bottom: 17px;"><strong>AHLI WARIS</strong></h5>
+            <table style="width: 100%; border-collapse: separate; border-spacing: 0 15px;">
+              <tr>
+                <td style="width: 35%;">Nama Ahli Waris</td>
+                <td style="width: 3%;">:</td>
+                <td style="width: 62%;"><i class="text-warning small">Belum diset</i></td>
+              </tr>
+              <tr>
+                <td>Hubungan Ahli Waris</td>
+                <td>:</td>
+                <td><i class="text-warning small">Belum diset</i></td>
+              </tr>
+              <tr>
+                <td>Alamat Email Ahli Waris</td>
+                <td>:</td>
+                <td><i class="text-warning small">Belum diset</i></td>
+              </tr>
+              <tr>
+                <td>Nomor Hp Ahli Waris</td>
+                <td>:</td>
+                <td><i class="text-warning small">Belum diset</i></td>
+              </tr>
+            </table>
+            <div style="float: right; margin-top: 84px;">
+              <button class="btn btn-primary text-right" data-toggle="modal" data-target=".bs-example-modal-sm">Perbarui</button>
+            </div>
           </div>
         </div>
       </div>
       <div class="row" style="margin-top: 14px;">
-        <div class="col-md-2" style="padding: 0 7px 0 14px;">
-          <div class="bg-primary" style="display: flex; flex-direction: column; min-height: 50vh;">
-            <h5 class="text-info" style="margin-left: 10px; margin-bottom: 32px; font-weight: bold;">KEAMANAN</h5>
+        <div class="col-md-4" style="padding: 0 7px 0 14px;">
+          <div class="bg-primary text-info" style="height: 320px; padding: 10px;">
+            <h5 style="margin-top: 0; margin-bottom: 32px;"><strong>SETTING AKUN</strong></h5>
+            <div class="form-group" style="margin-bottom: 16px;">                      
+              <label>Bahasa</label>
+              <select class="form-control" id="bahasa">
+                <option>Indonesia</option>
+                <option>Malaysia</option>
+              </select>
+            </div>
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label>Zona/Waktu</label>
+              <select class="form-control" id="bahasa">
+                <option>Asia/Jakarta</option>
+                <option>Asia/Surabaya</option>
+              </select>
+            </div>
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label>Subscribe Newsletter</label>
+              <div class="input-group">
+                <div class="input-group-addon" style="background-color: #005ddc;">
+                  <a href="#" style="color: #fff;">Iya</a>
+                </div>
+                <input type="text" class="form-control" id="exampleInputAmount" placeholder="" style="border-left: 0; width: 12%;">
+              </div>
+            </div>
+            <div style="float: right;">
+              <button class="btn btn-primary text-right">Simpan</button>
+            </div>
           </div>
         </div>
-        <div class="col-md-10" style="padding: 0 14px 0 7px;">
-          <div class="bg-primary" style="display: flex; flex-direction: column; min-height: 50vh;">
-            <h5 class="text-info" style="margin-left: 10px; margin-bottom: 32px; font-weight: bold;">SALDO ASET</h5>
+        <div class="col-md-4" style="padding: 0 7px 0 7px;">
+          <div class="bg-primary text-info" style="height: 320px; padding: 10px;">
+            <h5 style="margin-top: 0; margin-bottom: 32px;"><strong>PEMBATASAN</strong></h5>
+            <table style="width: 100%; border-collapse: separate; border-spacing: 0 15px;">
+              <tr>
+                <td style="width: 35%;">Limit Penarikan</td>
+                <td style="width: 3%;">:</td>
+                <td style="width: 62%;"><strong>Rp. 50.000.000</strong></td>
+              </tr>
+              <tr>
+                <td>Akun dikunci</td>
+                <td>:</td>
+                <td><i class="text-success small">Tidak</i></td>
+              </tr>
+              <tr>
+                <td>Chatroom dikunci</td>
+                <td>:</td>
+                <td><i class="text-success small">Tidak</i></td>
+              </tr>
+              <tr>
+                <td>Trade dikunci</td>
+                <td>:</td>
+                <td><i class="text-success small">Tidak</i></td>
+              </tr>
+              <tr>
+                <td>Voucher dikunci</td>
+                <td>:</td>
+                <td><i class="text-success small">Tidak</i></td>
+              </tr>
+              <tr>
+                <td>Withdraw</td>
+                <td>:</td>
+                <td><i class="text-success small">Tidak</i></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="modal-dialog" style="transform: translate(0, 20px);" role="document">
+        <div class="modal-content bg-primary" style="min-height: 630px; padding: 16px 64px;">
+          <h3 class="text-center" style="margin-bottom: 32px;">Ubah Alamat</h3>
+          <table class="text-info" style="width: 100%; margin-bottom: 28px;">
+            <tr>
+              <td style="width: 25%;"><strong>Alamat Lama</strong></td>
+              <td style="width: 3%;">:</td>
+              <td style="width: 72%;">Jl. Bersama dia yang cuma menganggap teman, No.001</td>
+            </tr>
+          </table>
+          <p style="margin-bottom: 16px;"><strong class="text-info">Formulir Pengajuan Perubahan Alamat</strong></p>
+          <div class="form-group text-info">
+            <label>Provinsi</label>
+            <select class="form-control" id="bahasa">
+              <option>Pilih</option>
+              <option>Jawa</option>
+              <option>Kalimantan</option>
+            </select>
+          </div>
+          <div class="form-group text-info">
+            <label>Kabupaten</label>
+            <select class="form-control" id="bahasa">
+              <option>Pilih</option>
+              <option>+62</option>
+              <option>+1</option>
+            </select>
+          </div>
+          <div class="form-group text-info">
+            <label>Alamat Lengkap</label>
+            <textarea class="form-control"></textarea>
+          </div>
+          <div class="form-group text-info">
+            <label>Kode Pos</label>
+            <select class="form-control" id="bahasa">
+              <option>Pilih</option>
+              <option>+62</option>
+              <option>+1</option>
+            </select>
+          </div>
+          <div class="text-right" style="margin-top: 48px;">
+            <button class="btn-lg btn-primary" style="padding-left: 64px; padding-right: 64px;">Proses</button>
           </div>
         </div>
       </div>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js" crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
   </body>

@@ -1093,7 +1093,7 @@ html {
 }
 body {
   font-family: Roboto, sans-serif !important;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.42857143;
   color: #fff;
   background-color: #fff;
@@ -1297,7 +1297,6 @@ h6,
   font-size: 12px;
 }
 p {
-  font-size: 12px;
   margin: 0px;
 }
 .lead {
