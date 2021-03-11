@@ -57,15 +57,20 @@
             <li><a href="#">Forum</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Saldo</a></li>
-            <li><a href="#">Bahasa</a></li>
+            <li><a href="#">Saldo<span class="glyphicon glyphicon-bell" aria-hidden="true" style="margin-left: 8px; vertical-align: middle;"></span></a></li>
+            <li><a href="#">Bahasa<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true" style="margin-left: 8px; vertical-align: middle;"></span></a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="padding: 5px;"><img src="img/dummy.jpg" alt="dummy" class="img-circle" style="width: 40px;"></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="padding: 14px;"><img src="img/dummy.jpg" alt="dummy" class="img-circle" style="width: 40px;"></a>
               <ul class="dropdown-menu" style="min-width: 200px;">
                 <li>
-                  <a href="#" class="small">
-                    <span class="text-primary">aghisna</span><br>
-                    <span class="text-info">Aghisna Ilma</span>
+                  <a href="#">
+                    <div style="display: flex; align-items: center;">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="margin-right: 8px;"></span>
+                      <div>
+                        <p class="text-primary">aghisna</p>
+                        <p class="text-info">Aghisna Ilma</p>
+                      </div>
+                    </div>
                   </a>
                 </li>
                 <li role="separator" class="divider"></li>
@@ -88,30 +93,36 @@
       <div class="row" style="margin-top: -20px; margin-bottom: 16px;">
         <div class="col-md-12" style="display: flex; align-items: center;">
           <h4 style="margin: 0;">Profil & Setting</h4>
-          <small class="text-primary" style="margin-left: auto; margin-right: 20px;">Total Nilai Aset</small>
-          <small>Rp. 895.265.678</small>
+          <p class="text-primary" style="margin-left: auto; margin-right: 20px;">Total Nilai Aset</p>
+          <p>Rp. 895.265.678</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4" style="padding: 0 7px 0 14px;">
-          <div class="bg-primary small text-info" style="display: flex; flex-direction: column; align-items: center; min-height: 50vh; padding: 10px;">
-            <h5 style="align-self: flex-start; margin-top: 0; margin-bottom: 32px;  font-weight: bold;">FOTO PROFIL</h5>
+          <div class="bg-primary text-info" style="height: 320px; padding: 10px;">
+            <h5 style="margin-top: 0; margin-bottom: 32px;"><strong>FOTO PROFIL</strong></h5>
             <div>
               <p style="margin-bottom: 32px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, possimus, sit dicta ipsam saepe omnis sint ex impedit, ratione nemo reprehenderit, harum illum eveniet distinctio qui facere repellat debitis? Quis.</p>
-              <div style="display: flex; margin-bottom: 32px;">
-                <div style="display: flex; flex-direction: column; align-items:center;">
-                  <p style="margin-bottom: 8px;">Foto profil saat ini</p>
+              <div class="row" style="margin-bottom: 16px;">
+                <div class="col-md-5">
+                  <p>Foto profil saat ini</p>
+                </div>
+                <div class="col-md-7">
+                  <p>Ganti foto baru</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5">
                   <img src="img/dummy.jpg" alt="dummy.jpg" class="img-circle" style="width: 80px;">
                 </div>
-                <div style="display: flex; flex-direction: column; align-items:flex-start; margin-left: auto;">
-                  <p style="margin-bottom: 8px;">Ganti foto baru</p>
-                  <div class="form-group" style="width: 240px;">                      
-                    <div class="input-group">
-                    <div class="input-group-addon">
-                      <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="label label-success">Pilih Berkas</span></a>
+                <div class="col-md-7">
+                  <div class="form-group">                      
+                    <div class="input-group col-md-7">
+                      <div class="input-group-addon" style="background-color: #767c9720;">
+                        <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm" class="label label-success" style="font-size: 8px; padding: 2px 12px; color: white;">Pilih Berkas</a>
+                      </div>
+                      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Tidak ada berkas" style="border-left: 0px; font-size: 10px; width: 120px;">
                     </div>
-                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Tidak ada berkas">
-                  </div>
                     <small>Ukuran file maksimal 500kb</small>
                   </div>
                 </div>
@@ -123,13 +134,13 @@
           </div>
         </div>
         <div class="col-md-4" style="padding: 0 7px;">
-          <div class="bg-primary text-info" style="display: flex; flex-direction: column; min-height: 50vh; padding: 10px;">
-            <h5 style="margin-top: 0; margin-bottom: 32px; font-weight: bold;">PROFIL</h5>
-            <table>
+          <div class="bg-primary text-info" style="height: 320px; padding: 10px;">
+            <h5 style="margin-top: 0; margin-bottom: 17px;"><strong>PROFIL</strong></h5>
+            <table style="width: 100%; border-collapse: separate; border-spacing: 0 15px;">
               <tr>
-                <td>Verifikasi</td>
-                <td>:</td>
-                <td>Belum Verifikasi <span class="label label-success">Ajukan Verifikasi</span></td>
+                <td style="width: 35%;">Verifikasi</td>
+                <td style="width: 3%;">:</td>
+                <td style="width: 62%;"><strong>Belum Verifikasi</strong><span class="label label-success" style="font-size: 8px; padding: 2px 12px; color: white; margin-left: 16px;">Ajukan Verifikasi</span></td>
               </tr>
               <tr>
                 <td>Nama Lengkap</td>
@@ -139,12 +150,12 @@
               <tr>
                 <td>Username</td>
                 <td>:</td>
-                <td>aghisna</td>
+                <td><strong>aghisna</strong></td>
               </tr>
               <tr>
                 <td>Email</td>
                 <td>:</td>
-                <td>aghisna@gmail.com</td>
+                <td><strong>aghisna@gmail.com</strong></td>
               </tr>
               <tr>
                 <td>Nomor HP</td>
@@ -160,38 +171,95 @@
           </div>
         </div>
         <div class="col-md-4" style="padding: 0 14px 0 7px;">
-          <div class="bg-primary" style="display: flex; flex-direction: column; min-height: 50vh;">
-            <h5 class="text-info" style="margin-left: 10px; margin-bottom: 32px; font-weight: bold;">FOTO PENGAJUAN</h5>
+          <div class="bg-primary text-info" style="height: 320px; padding: 10px;">
+            <h5 style="margin-top: 0; margin-bottom: 32px;"><strong>FOTO PENGAJUAN</strong></h5>
+            <div class="row">
+              <div class="col-md-6">
+                <p><strong>ID Card</strong></p>
+              </div>
+              <div class="col-md-6">
+                <p><strong>Selfie</strong></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div style="background-color: black; height: 100px;"></div>
+              </div>
+              <div class="col-md-6">
+                <div style="background-color: black; height: 100px;"></div>
+              </div>
+            </div>
+            <p style="margin-top: 24px;"><strong>Riwayat penolakan verifikasi</strong></p>
           </div>
         </div>
       </div>
       <div class="row" style="margin-top: 14px;">
         <div class="col-md-4" style="padding: 0 7px 0 14px;">
-          <div class="bg-primary text-info" style="display: flex; flex-direction: column; min-height: 50vh; padding: 10px;">
-            <h5 style="margin-top: 0; margin-bottom: 32px; font-weight: bold;">SETTING AKUN</h5>
-            <div class="form-group">                      
+          <div class="bg-primary text-info" style="height: 320px; padding: 10px;">
+            <h5 style="margin-top: 0; margin-bottom: 32px;"><strong>SETTING AKUN</strong></h5>
+            <div class="form-group" style="margin-bottom: 16px;">                      
               <label>Bahasa</label>
               <select class="form-control" id="bahasa">
-                <option>Berhasil</option>
-                <option>Dibatalkan</option>
-                <option>Dipakai</option>
-                <option>Belum dipakai</option>
+                <option>Indonesia</option>
+                <option>Malaysia</option>
               </select>
             </div>
-            <div class="form-group">                      
+            <div class="form-group" style="margin-bottom: 16px;">
               <label>Zona/Waktu</label>
               <select class="form-control" id="bahasa">
-                <option>Berhasil</option>
-                <option>Dibatalkan</option>
-                <option>Dipakai</option>
-                <option>Belum dipakai</option>
+                <option>Asia/Jakarta</option>
+                <option>Asia/Surabaya</option>
               </select>
+            </div>
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label>Subscribe Newsletter</label>
+              <div class="input-group">
+                <div class="input-group-addon" style="background-color: #005ddc;">
+                  <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm" style="color: #fff;">Iya</a>
+                </div>
+                <input type="text" class="form-control" id="exampleInputAmount" placeholder="" style="border-left: 0; width: 12%;">
+              </div>
+            </div>
+            <div style="float: right;">
+              <button class="btn btn-primary text-right">Simpan</button>
             </div>
           </div>
         </div>
         <div class="col-md-4" style="padding: 0 7px 0 7px;">
-          <div class="bg-primary" style="display: flex; flex-direction: column; min-height: 50vh;">
-            <h5 class="text-info" style="margin-left: 10px; margin-bottom: 32px; font-weight: bold;">PEMBATASAN</h5>
+          <div class="bg-primary text-info" style="height: 320px; padding: 10px;">
+            <h5 style="margin-top: 0; margin-bottom: 32px;"><strong>PEMBATASAN</strong></h5>
+            <table style="width: 100%; border-collapse: separate; border-spacing: 0 15px;">
+              <tr>
+                <td style="width: 35%;">Limit Penarikan</td>
+                <td style="width: 3%;">:</td>
+                <td style="width: 62%;"><strong>Rp. 50.000.000</strong></td>
+              </tr>
+              <tr>
+                <td>Akun dikunci</td>
+                <td>:</td>
+                <td><i class="text-success small">Tidak</i></td>
+              </tr>
+              <tr>
+                <td>Chatroom dikunci</td>
+                <td>:</td>
+                <td><i class="text-success small">Tidak</i></td>
+              </tr>
+              <tr>
+                <td>Trade dikunci</td>
+                <td>:</td>
+                <td><i class="text-success small">Tidak</i></td>
+              </tr>
+              <tr>
+                <td>Voucher dikunci</td>
+                <td>:</td>
+                <td><i class="text-success small">Tidak</i></td>
+              </tr>
+              <tr>
+                <td>Withdraw</td>
+                <td>:</td>
+                <td><i class="text-success small">Tidak</i></td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
