@@ -17,7 +17,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body style="z-index: 1; background: url('img/bg.jpg') 50% 0% / cover no-repeat scroll padding-box border-box">
+  <body style="z-index: 1; background: url('http://next.cointrade.id/gallery_gen/ec7ccfe8da707ddbf21962addb76a4f1.jpg') 50% 0% / cover no-repeat scroll padding-box border-box rgb(255, 255, 255);">
 
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -29,11 +29,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">
-            <div>
-              <img src="img/logo.png" alt="logo">
-            </div>
-          </a>
+          <a class="navbar-brand" href="#">Brand</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -64,17 +60,6 @@
     </nav>
 
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="form-inline">
-            <div class="form-group">
-              <label style="margin-right: 16px;"><strong>Page List : </strong></label>
-              <select class="form-control" id="dynamic_select">
-              </select>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="row">
         <div class="col-md-12">
           <h3>text scheme color</h3>
@@ -180,21 +165,5 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      $(function(){
-        output = '<option value="" selected>Pick a Page</option>';
-        for (i = 1; i <= 51; i++) {
-          output += '<option value="http://localhost/next-cointrade/halaman' + i + '.html">Page ' + i + '</option>';
-        }
-        $('#dynamic_select').html(output)
-        $('#dynamic_select').on('change', function () {
-          var url = $(this).val();
-          if (url) {
-            window.open(url, '_blank');
-          }
-          return false;
-        });
-      });
-    </script>
   </body>
 </html>
