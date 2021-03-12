@@ -72,7 +72,7 @@ mark {
   color: #000;
 }
 small {
-  font-size: 65%;
+  font-size: 75%;
 }
 sub,
 sup {
@@ -1313,7 +1313,7 @@ p {
 }
 small,
 .small {
-  font-size: 65%;
+  font-size: 75%;
 }
 mark,
 .mark {
