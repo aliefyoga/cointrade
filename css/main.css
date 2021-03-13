@@ -202,6 +202,9 @@ th {
   width: 1em;
   margin-left: -1em;
 }
+.rounded-0 {
+  border-radius: 0 !important;
+}
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
   *,

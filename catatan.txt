@@ -8,3 +8,4 @@ list butuh menyesuaikan
 
 new class
 .square-list
+.rounded-0
