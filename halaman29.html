@@ -58,18 +58,31 @@
             <li><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a></li>
             <li><a href="#">Bahasa</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span> Account</a>
-              <ul class="dropdown-menu">
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
-                <li class="divider"></li>
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
-                <li class="divider"></li>            
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="padding: 14px;">
+                <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                <img src="img/dummy.jpg" alt="dummy" class="img-circle" style="width: 40px;">
+              </a>
+              <ul class="dropdown-menu" style="min-width: 200px;">
+                <li>
+                  <a href="#">
+                    <div style="display: flex; align-items: center;">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="margin-right: 8px;"></span>
+                      <div>
+                        <p class="text-primary">aghisna</p>
+                        <p class="text-info">Aghisna Ilma</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true" style="margin-right: 8px;"></span>Profil & Setting</a></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-lock" aria-hidden="true" style="margin-right: 8px;"></span>Keamanan</a></li>
+                <li style="margin: 16px 0;" class="active"><a href="#"><span class="glyphicon glyphicon-tags" aria-hidden="true" style="margin-right: 8px;"></span>Voucher</a></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-tower" aria-hidden="true" style="margin-right: 8px;"></span>Program Afiliasi</a></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-apple" aria-hidden="true" style="margin-right: 8px;"></span>Dukungan</a></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true" style="margin-right: 8px;"></span>Informasi</a></li>
+                <li role="separator" class="divider"></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-log-out" aria-hidden="true" style="margin-right: 8px;"></span>Logout</a></li>
               </ul>
             </li>
           </ul>
@@ -82,7 +95,7 @@
         <div class="col-md-6">
           <h4 style="margin: 0;"><strong>Voucher</strong></h4>
         </div>
-        <div class="col-md-6 text-right small">
+        <div class="col-md-6 text-right">
           <span class="text-primary" style="padding-right: 10px;">Total Nilai Aset</span> Rp.898.398.000
         </div>
       </div>
@@ -101,41 +114,37 @@
                 <div class="form-group">                      
                     <label><strong>Jumlah*</strong></label>
                     <input type="text" class="form-control" id="voucher" placeholder="">
-                    <p class="small">*Lorem ipsum dolor sit amet,</p>
+                    <p class="small">Nilai voucher dalam satuan idr</p>
                 </div>
                 <div class="form-group">
                     <label><strong>Email Penerima</strong></label>
                     <input type="text" class="form-control" id="voucher" placeholder=""> 
-                    <p class="small">*Lorem ipsum dolor sit amet,</p>
+                    <p class="small">Email penerima voucher, bisa dikosongkan agar dapat direedem oleh siapapun</p>
                 </div>
                 <div class="form-group">
-                    <label><strong>PIN Email</strong></label>
+                    <label><strong>PIN Email*</strong></label>
                     <div class="input-group">                                     
                       <input type="text" class="form-control" id="pin" placeholder="">                      
                       <!-- <div class="input-group-addon"><button type="submit" class="btn-link"> PIN </button></div> -->
                       <div class="input-group-addon" style="padding: 0 25px"><strong>Kirim PIN</strong></div>
-                    </div>                   
-                  <br><br><br>
-                  <button class="btn btn-primary col-md-offset-9">Buat Voucher</button>
+                    </div>
+                  <button class="btn btn-primary rounded-0" style="display: flex;margin-left: auto;margin-top: 44px; padding-left: 60px; padding-right: 60px;">Buat Voucher</button>
                 </div>                
               </form>
             </div>
           </div>          
         </div>
         <div class="col-md-4 text-justify text-info">
-          <div id="" class="2 container-fluid bg-success collapse in panel panel-default" style="padding-bottom: 245px">
+          <div id="" class="2 container-fluid bg-success collapse in panel panel-default" style="padding-bottom: 245px;background-color: black">
             <h5><strong>INFO PEMBUATAN VOUCHER</strong></h5>
-            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </P>
-            <p class="text-success" style="padding: 7px; margin: 4px;border: solid #d9341a 1px;border-radius: 4px;"><span class="text-warning font-italic">Perhatian! </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-            <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </li>
+            <P>Gunakan kode voucher untuk mengirim saldo Rupiah ke sesama member coin trade</P><br>
+            <p style="padding: 8px; margin: 12px;border: solid #d9341a 1px;border-radius: 4px;color: white;"><span class="text-warning font-italic">Perhatian! </span>Simpan Kode Voucher dengan baik, dan pastikan hanya penerima yang mengetahui Kode Voucher yang Anda buat. </p><br>
+            <ul style="padding-left: 15px;">
+              <li>Maksimal pembuatan voucher per hari diakumulasikan dengan total penarikan Rupiah.</li><br>
+              <li>Maksimal penarikan Rp. 50.000.000 per hari untuk menaikan limit, klik disini</li>
             </ul>
           </div>
         </div>
-
-        
       </div>
     </div><!-- /.container-fluid -->
 

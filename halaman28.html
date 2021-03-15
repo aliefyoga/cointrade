@@ -58,18 +58,31 @@
             <li><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a></li>
             <li><a href="#">Bahasa</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span> Account</a>
-              <ul class="dropdown-menu">
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
-                <li class="divider"></li>
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
-                <li class="divider"></li>            
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="padding: 14px;">
+                <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                <img src="img/dummy.jpg" alt="dummy" class="img-circle" style="width: 40px;">
+              </a>
+              <ul class="dropdown-menu" style="min-width: 200px;">
+                <li>
+                  <a href="#">
+                    <div style="display: flex; align-items: center;">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="margin-right: 8px;"></span>
+                      <div>
+                        <p class="text-primary">aghisna</p>
+                        <p class="text-info">Aghisna Ilma</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true" style="margin-right: 8px;"></span>Profil & Setting</a></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-lock" aria-hidden="true" style="margin-right: 8px;"></span>Keamanan</a></li>
+                <li style="margin: 16px 0;" class="active"><a href="#"><span class="glyphicon glyphicon-tags" aria-hidden="true" style="margin-right: 8px;"></span>Voucher</a></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-tower" aria-hidden="true" style="margin-right: 8px;"></span>Program Afiliasi</a></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-apple" aria-hidden="true" style="margin-right: 8px;"></span>Dukungan</a></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true" style="margin-right: 8px;"></span>Informasi</a></li>
+                <li role="separator" class="divider"></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-log-out" aria-hidden="true" style="margin-right: 8px;"></span>Logout</a></li>
               </ul>
             </li>
           </ul>
@@ -82,7 +95,7 @@
         <div class="col-md-6">
           <h4 style="margin: 0;"><strong>Voucher</strong></h4>
         </div>
-        <div class="col-md-6 text-right small">
+        <div class="col-md-6 text-right">
           <span class="text-primary" style="padding-right: 10px;">Total Nilai Aset</span> Rp.898.398.000
         </div>
       </div>
@@ -90,8 +103,8 @@
       <div class="row">
         <div class="col-md-8 text-center" style="padding-right: 0">
           <div class="bg-primary container-fluid text-left text-info">    
-            <a href=".1" class="text-info" data-toggle="collapse">Pencarian Voucher</a>
-            <a href=".2" class="" data-toggle="collapse" style="padding: 12px 25px 0 25px; display: inline-flex;">Buat Voucher Baru</a>
+            <a href=".1" class="" data-toggle="collapse">Pencarian Voucher</a>
+            <a href=".2" class="text-info" data-toggle="collapse" style="padding: 12px 25px 0 25px; display: inline-flex;">Buat Voucher Baru</a>
             <a href=".3" class="text-info" data-toggle="collapse">Riwayat</a>
             <hr>
             <div id="" class="1 collapse in">
@@ -99,25 +112,18 @@
               <form>                  
                 <div class="form-group col-md-12">                                    
                     <input type="text" class="form-control" id="voucher" placeholder="">
-                  <span>*contoh Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
-                  <br><br><br>
-                  <button class="btn btn-primary col-md-offset-5">carikan voucher</button>
+                  <span>*contoh format voucher: L3BSKUEO-L3BSKUEO-L3BSKUEO-L3BSKUEO-L3BSKUEO-L3BSKUEO</span>
+                  <button class="btn btn-primary rounded-0" style="display: flex;margin: auto;padding-left: 40px; padding-right: 40px;margin-top: 44px;">carikan voucher</button>
                 </div>                
               </form>
             </div>
           </div>          
         </div>
         <div class="col-md-4 text-justify text-info">
-          <div id="" class="1 container-fluid collapse in panel panel-default" style="padding-bottom: 29px">
-            <h5><strong>INFO PENCARIAN VOUCHER</strong></h5>
-            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.</P>
-            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.</P><br>
+          <div id="" class="1 container-fluid collapse in panel panel-default" style="padding-bottom: 78px;background-color: black;">
+            <h5><strong>INFO PENCARIAN VOUCHER</strong></h5>          
+            <P>Jika Anda sudah memiliki kode voucher, silakan masukan kode tersebut di formulir input kode voucher untuk mencairkan voucher menjadi saldo di Cointrade.</P><br>
+            <P>Apabila Anda belum memiliki kode voucher, Anda bisa mendapatkannya dengan membeli voucher di beberapa changer Online yang sudah bekerjasama dengan cointrade.</P>
           </div>
         </div>
         
