@@ -58,18 +58,31 @@
             <li><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a></li>
             <li><a href="#">Bahasa</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span> Account</a>
-              <ul class="dropdown-menu">
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
-                <li class="divider"></li>
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
-                <li class="divider"></li>            
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>dewa</a></li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="padding: 14px;">
+                <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                <img src="img/dummy.jpg" alt="dummy" class="img-circle" style="width: 40px;">
+              </a>
+              <ul class="dropdown-menu" style="min-width: 200px;">
+                <li>
+                  <a href="#">
+                    <div style="display: flex; align-items: center;">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="margin-right: 8px;"></span>
+                      <div>
+                        <p class="text-primary">aghisna</p>
+                        <p class="text-info">Aghisna Ilma</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true" style="margin-right: 8px;"></span>Profil & Setting</a></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-lock" aria-hidden="true" style="margin-right: 8px;"></span>Keamanan</a></li>
+                <li style="margin: 16px 0;" class="active"><a href="#"><span class="glyphicon glyphicon-tags" aria-hidden="true" style="margin-right: 8px;"></span>Voucher</a></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-tower" aria-hidden="true" style="margin-right: 8px;"></span>Program Afiliasi</a></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-apple" aria-hidden="true" style="margin-right: 8px;"></span>Dukungan</a></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true" style="margin-right: 8px;"></span>Informasi</a></li>
+                <li role="separator" class="divider"></li>
+                <li style="margin: 16px 0;"><a href="#"><span class="glyphicon glyphicon-log-out" aria-hidden="true" style="margin-right: 8px;"></span>Logout</a></li>
               </ul>
             </li>
           </ul>
@@ -78,7 +91,7 @@
     </nav>
 
     <div class="container-fluid">
-      <div class="row" style="margin-bottom: margin-top: -20px; margin-bottom: 16px;">
+      <div class="row" style="margin-bottom: 16px;">
         <div class="col-md-6">
           <h4 style="margin: 0;"><strong>Ticket Dukungan</strong></h4>
         </div>
@@ -95,7 +108,7 @@
               <div class="form-group">
                 <label>Kategori</label>
                 <select class="form-control">
-                  <option>Lorem</option>
+                  <option>Pilih Kategori</option>
                 </select>
               </div>
               <div class="form-group">
@@ -104,25 +117,35 @@
               </div>
               <div class="form-group">
                 <label>Pesan</label>
-                <textarea class="form-control" placeholder="Pesan Singkat dan Jelas"></textarea>
+                <textarea class="form-control" placeholder="Pesan Singkat dan Jelas" style="min-height: 70px;"></textarea>
               </div>
               <div class="form-group row">                  
                 <label class="col-md-12">Unggah Gambar</label>
                   <div class="col-md-6">                    
-                    <div class="panel">
-                      <div class="bg-info text-center" style="height: 200px">
-                        <span>Tarik dan Letakan disini</span>
+                    <div class="panel" style="margin-bottom: 8px;">
+                      <div class="bg-info text-center" style="height: 200px;display: flex;">
+                        <span style="margin: auto;">Tarik dan Letakan disini</span>
                       </div>                      
                     </div>
-                    <input type="file" class="form-control" name="">
+                    <div class="input-group">
+                      <div class="input-group-addon" style="background-color: #767c9720;">
+                        <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm" class="label label-success" style="font-size: 8px; padding: 2px 12px; color: white;">Pilih Berkas</a>
+                      </div>
+                      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Tidak ada berkas" style="border-left: 0px; font-size: 10px; width: 100%;">
+                    </div>
                   </div>
                   <div class="col-md-6">                    
-                    <div class="panel">
-                      <div class="bg-info text-center" style="height: 200px">
-                        <span>Tarik dan Letakan disini</span>
+                    <div class="panel" style="margin-bottom: 8px;">
+                      <div class="bg-info text-center" style="height: 200px;display: flex;">
+                        <span style="margin: auto;">Tarik dan Letakan disini</span>
                       </div>                      
                     </div>
-                    <input type="file" class="form-control" name="">
+                    <div class="input-group">
+                      <div class="input-group-addon" style="background-color: #767c9720;">
+                        <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm" class="label label-success" style="font-size: 8px; padding: 2px 12px; color: white;">Pilih Berkas</a>
+                      </div>
+                      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Tidak ada berkas" style="border-left: 0px; font-size: 10px; width: 100%;">
+                    </div>
                   </div>       
               </div>
               <button class="btn btn-primary" style="float: right; margin-bottom: 15px;">Kirim</button>
@@ -135,7 +158,7 @@
             <h5><strong>TICKET</strong></h5>
             <div class="bg-info panel">
               <div class="container-fluid bg-info" style="padding-top: 10px; padding-bottom: 10px;">                 
-                <table class="col-md-11">
+                <table class="col-md-11" style="font-weight: bold;">
                   <tbody>
                     <tr>
                       <td style="width: 15%">Kategori</td>
@@ -154,7 +177,7 @@
                     <tr>
                       <td>Status</td>
                       <td>:</td>
-                      <td>Ditutup</td>
+                      <td class="text-warning">Ditutup</td>
                     </tr>
                   </tbody>                    
                 </table>
@@ -168,7 +191,7 @@
           <div class="container-fluid bg-primary text-info">          
             <div class="panel">
               <div class="container-fluid bg-info" style="padding-top: 10px; padding-bottom: 10px;">
-                <table class="col-md-11">
+                <table class="col-md-11" style="font-weight: bold;"> 
                   <tbody>
                     <tr>
                       <td style="width: 15%">Kategori</td>
@@ -187,7 +210,7 @@
                     <tr>
                       <td>Status</td>
                       <td>:</td>
-                      <td>Dibuka</td>
+                      <td class="text-success">Dibuka</td>
                     </tr>
                   </tbody>                    
                 </table>
@@ -202,7 +225,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud</p>
-                <img src="#">
+                <img src="img/auto-dewa.png" style="margin-top: 8px;">
                 <hr>
                 <small>22.12.2020</small>
                 <p><strong>Richard cointrade</strong></p>
